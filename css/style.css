@@ -1,0 +1,322 @@
+* {
+    font-family: Garamond, serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+[class^="col-"] {
+    float: left;
+
+}
+
+.row {
+    margin: 0 auto;
+    padding: 0;
+    border-bottom: gray solid 1px;
+}
+
+footer .row {
+    border-bottom: none;
+}
+
+.col-12 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header.row .col-12 span:first-child {
+    font-weight: bold;
+    margin-left: 55px;
+}
+
+header.row .col-12 span {
+    margin-left: 30px;
+}
+
+header.row .col-12 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.social a:last-child img {
+    margin-right: 50px;
+}
+
+.social a {
+    margin-right: 20px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.hl {
+    border-bottom: solid darkgrey 1px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main .col-12 {
+    display: flex;
+}
+
+main .row:first-child .col-12 .image {
+    width: 50%;
+}
+
+main .row:first-child .col-12 .text {
+    width: 50%;
+}
+
+main .row .col-12 .image {
+    width: 33%;
+}
+
+main .row .col-12 .text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 67%;
+    padding-right: 7%;
+    padding-left: 7%;
+}
+
+main .row .col-12 div figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+button, [type=submit] {
+    width: 80px;
+    height: 40px;
+}
+
+.content h1 {
+    text-align: center;
+    margin: 50px;
+}
+
+.content .images {
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap row;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.element {
+    display: inline-block;
+    width: 33.3%;
+    text-align: center;
+}
+
+.element:first-child, .element:nth-child(2), .element:nth-child(3) {
+    border-bottom: gray solid 1px;
+}
+
+.element:nth-child(4), .element:first-child {
+    border-left: none;
+}
+
+.element {
+    border-left: gray solid 1px;
+}
+
+.element h1 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.element p {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+form {
+    width: 65%;
+    margin: 0 auto;
+    font-weight: bold;
+}
+
+.element img {
+    margin-top: 40px;
+}
+
+.row_1 div {
+    width: 33%;
+}
+
+.row_1 input {
+    width: 100%;
+    height: 30px;
+}
+
+.row_1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row_2 {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.row_2 label, .row_3 label, .row_4 label {
+    margin-right: 25px;
+}
+
+.row_3 select {
+    width: 100%;
+    height: 40px;
+}
+
+.row_4 textarea {
+    width: 100%;
+    height: 150px;
+}
+
+.row_5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer .col-12 div {
+    text-align: center;
+}
+
+footer img {
+    margin-top: 20px;
+    padding: 10px;
+    border: gray solid 1px;
+    border-radius: 100%;
+}
+
+footer img:hover {
+    background-color: #d6d1d1;
+}
+
+.images img, .image img {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 850px) {
+    .sm_hide {
+        display: none;
+    }
+
+    main .row .col-12 .text {
+        width: 50%;
+    }
+
+    main .row .col-12 .image {
+        width: 50%;
+    }
+
+    .container {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .element {
+        width: 49%;
+    }
+
+    .container .element:nth-child(2n) {
+        margin-left: -4px;
+    }
+
+    .element:nth-child(n) {
+        border: none;
+    }
+
+    .element:nth-child(n) {
+        border-bottom: gray solid 1px;
+    }
+
+    .element:nth-child(2n - 1) {
+        border-right: gray solid 1px;
+    }
+
+    .element:nth-child(5), .element:nth-child(6) {
+        border-bottom: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .sm_hide {
+        display: none;
+    }
+
+    .vsm_hide {
+        display: none;
+    }
+
+    .element {
+        width: 100%;
+    }
+
+    .element:nth-child(n) {
+        border: none;
+    }
+
+    .element:nth-child(n) {
+        border-bottom: gray solid 1px;
+    }
+
+    .element:last-child {
+        border-bottom: none;
+    }
+
+    .row_1 {
+        flex-direction: column;
+    }
+
+    .row_1 div {
+        width: 100%;
+    }
+
+    .content .images {
+        justify-content: center;
+    }
+
+    main .col-12 {
+        flex-direction: column;
+    }
+
+    main .row .col-12 .image, main .row .col-12 .text {
+        width: 100% !important;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
